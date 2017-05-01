@@ -1,0 +1,18 @@
+{
+  "name": "mychat",
+  "version": "1.0.0",
+  "description": "Un chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "coline",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "socket.io": "^1.7.3",
+    "uuid": "^3.0.1"
+  }
+}

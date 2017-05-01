@@ -1,0 +1,105 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #d1bcba;
+  color: #1a2835;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#msgform {
+  position: absolute;
+  height: 50px;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#messages {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  bottom: 45px;
+  overflow: auto;
+}
+
+#msgform input {
+  width: 100%;
+  height: 50px;
+  line-height: 40px;
+  border: 3px solid #50556e;
+  background-color: #1c1b2c;
+  font-size: 20px;
+  padding-left: 5px;
+  color: grey;
+}
+#msgform input:focus {
+  outline: none;
+  border-color: #939ed1;
+}
+
+#users {
+  position: absolute;
+  width: 300px;
+  top: 15px;
+  right: 0;
+}
+#users h2 {
+  font-size: 20px;
+}
+#users ul {
+  padding-left: 15px;
+}
+
+.user {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  margin-left: -50px;
+  margin-top: -12px;
+  transition: top 1s ease-out, left 1s ease-out;
+}
+.user .icon {
+  font-size: 34px;
+}
+.user .nickname {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bubble {
+	position: relative;
+  top: 25px;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+  font-size: 20px;
+}
+.bubble:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.bubble:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.bubble:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 16px;
+	margin-left: -16px;
+}
